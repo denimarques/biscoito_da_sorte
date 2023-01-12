@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscoito da Sorte</title>
+
+    <link rel="stylesheet" href="/public/css/tailwindcss.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="h-screen grid place-items-center">
+            <div id="face-one" class="max-w-md bg-white drop-shadow-[1rem_1rem_1rem_rgba(0,0,0,0.725)] rounded-md mx-auto p-16">
+                <div class="text-center space-y-5">
+                    <h1 class="text-2xl font-bold">Qual é a sua sorte de hoje?</h1>
+                    <p>Abra o biscoito e descubra!</p>
+
+                    <button id="open" class="face">
+                        <img class="w-full" src="/public/image/fortune-cookie.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div id="face-two" class="max-w-md bg-white drop-shadow-[1rem_1rem_1rem_rgba(0,0,0,0.725)] rounded-md mx-auto p-16 hidden">
+                <div class="text-center space-y-10">
+                    <h1 class="text-2xl font-bold">Aqui está a sua sorte de hoje:</h1>
+                    <div class="bg-[#E4EDF1] p-2 drop-shadow-[0.1rem_0.1rem_0.1rem_rgba(0,0,0,0.5)] survial">
+                        <p id="sentense" class="font-Dancing-Script text-2xl font-bold text-black"></p>
+                    </div>
+
+                    <img class="w-full" src="/public/image/opened-cookie.svg" alt="">
+
+                    <button id="new-sentence" class="bg-[#FF9500] transition duration-500 hover:bg-[#c17000] p-4 rounded text-white">Abrir outro biscoito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/public/js/script.js"></script>
+</body>
+
+</html>

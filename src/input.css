@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply bg-gradient-to-r from-[#190361] to-[#BB00FF] font-DM-Sans  text-[#34355B];
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        @apply font-Montserrat;
+    }
+}
+
+@layer utilities{
+    .face:hover {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+      }
+      
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+
+      .survial{
+        animation: downtop;
+        animation-duration: 2000ms;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes downtop {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 5rem, 0);
+        }
+        100%{
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+      }
+}
